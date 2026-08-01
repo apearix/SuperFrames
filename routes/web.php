@@ -2,52 +2,71 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| SuperFrame Application Routes.
-|
-*/
-
 // Home Page
-Route::view('/', 'pages.home')->name('home');
+Route::get('/', function () {
+    return view('pages.home');
+});
 
-// Shop By Occasion
-Route::view('/shop-by-occasion', 'pages.occasion')->name('occasion.index');
-Route::view('/shop-by-occasion/{slug}', 'pages.occasion-detail')->name('occasion.show');
+// Best Sellers Listing
+Route::get('/best-sellers', function () {
+    return view('pages.best-sellers');
+});
 
-// Shop By Frame Style
-Route::view('/shop-by-frame-style', 'pages.frame-style')->name('style.index');
-Route::view('/shop-by-frame-style/{slug}', 'pages.frame-style-detail')->name('style.show');
+// Frame Styles
+Route::get('/shop-by-frame-style', function () {
+    return view('pages.frame-style-detail', ['slug' => '3d-shadow-box']);
+});
+Route::get('/frame-style/{slug}', function ($slug) {
+    return view('pages.frame-style-detail', ['slug' => $slug]);
+});
 
-// Best Sellers & General Gallery
-Route::view('/best-sellers', 'pages.best-sellers')->name('bestsellers');
-Route::view('/gallery', 'pages.gallery')->name('gallery');
+// Occasions
+Route::get('/shop-by-occasion', function () {
+    return view('pages.occasion-detail', ['slug' => 'anniversary']);
+});
+Route::get('/occasion/{slug}', function ($slug) {
+    return view('pages.occasion-detail', ['slug' => $slug]);
+});
 
-// Customer Memory Wall
-Route::view('/customer-memory-wall', 'pages.memory-wall')->name('memory.index');
-Route::view('/customer-memory-wall/{slug}', 'pages.memory-detail')->name('memory.show');
+// Product Details
+Route::get('/product/{slug}', function ($slug) {
+    return view('pages.product-detail', ['slug' => $slug]);
+});
 
-// Product Single Page
-Route::view('/product/{slug}', 'pages.product-detail')->name('product.show');
+// Customer Memory Wall & Gallery
+Route::get('/memory-wall', function () {
+    return view('pages.memory-wall');
+});
+Route::get('/gallery', function () {
+    return view('pages.gallery');
+});
 
-// Informational Pages
-Route::view('/about', 'pages.about')->name('about');
-Route::view('/contact', 'pages.contact')->name('contact');
+// About Us & Contact
+Route::get('/about', function () {
+    return view('pages.about');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
 
-// Blog Routes
-Route::view('/blog', 'pages.blog')->name('blog.index');
-Route::view('/blog/{slug}', 'pages.blog-detail')->name('blog.show');
+// Blog Pages
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
+Route::get('/blog/{slug}', function ($slug) {
+    return view('pages.blog-detail', ['slug' => $slug]);
+});
 
-// Policy & Legal Pages
-Route::view('/privacy-policy', 'pages.privacy-policy')->name('privacy');
-Route::view('/terms-and-conditions', 'pages.terms')->name('terms');
-Route::view('/shipping-policy', 'pages.shipping')->name('shipping');
-Route::view('/return-policy', 'pages.return-policy')->name('return');
-
-// Fallback Route (404 Page)
-Route::fallback(function () {
-    return response()->view('pages.404', [], 404);
+// Legal Policies
+Route::get('/privacy-policy', function () {
+    return view('pages.privacy-policy');
+});
+Route::get('/terms', function () {
+    return view('pages.terms');
+});
+Route::get('/shipping', function () {
+    return view('pages.shipping');
+});
+Route::get('/return-policy', function () {
+    return view('pages.return-policy');
 });

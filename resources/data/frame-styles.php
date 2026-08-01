@@ -1,0 +1,55 @@
+<?php
+
+return [
+    [
+        'id' => 1,
+        'slug' => '3d-shadow-box',
+        'title' => '3D Shadow Box Frame',
+        'eyebrow' => 'Crafted with Love, Made for Memories',
+        'subtitle' => 'Intricate multi-layered wooden frames with warm ambient LED lighting.',
+        'banner_image' => 'images/banners/shadow-box-banner.jpg',
+        'description' => 'Our handcrafted 3D Shadow Box Frames add depth, warmth, and emotion to your cherished photos. Featuring precision laser-cut wooden elements, miniature handcrafted figurines, and energy-efficient LED fairy lights, every frame becomes a stunning illuminated art piece.',
+        'features' => [
+            'Handcrafted MDF wood box construction',
+            'Warm yellow micro LED fairy lights included',
+            'Laser-engraved acrylic or wooden personal notes',
+            'High-transparency glare-resistant glass panel',
+            'Ready to wall-mount or place on tabletop',
+        ],
+        'materials' => 'Premium MDF Wood, Glass, Micro LED, Acrylic Elements',
+        'care' => 'Dust gently with a clean, dry micro-fiber cloth. Keep away from direct moisture.',
+    ],
+    [
+        'id' => 2,
+        'slug' => 'quilling-name-frame',
+        'title' => 'Quilling Name Frame',
+        'eyebrow' => 'Paper Artistry at Its Finest',
+        'subtitle' => 'Delicate paper quilling designs forming names, initials, and floral wreaths.',
+        'banner_image' => 'images/banners/quilling-banner.jpg',
+        'description' => 'Celebrate birthdays, weddings, and anniversaries with custom paper quilling art. Each floral petal and alphabet curve is meticulously rolled and shaped by hand using high-gsm acid-free paper strips.',
+        'features' => [
+            '100% hand-rolled acid-free paper quilling',
+            'Customizable name and color themes',
+            'Durable white or natural pine wood casing',
+            'Acid-free backing board to prevent yellowing',
+        ],
+        'materials' => 'High-GSM Paper, Pine Wood Frame, Glass Front',
+        'care' => 'Avoid direct sunlight exposure to preserve vibrant paper colors.',
+    ],
+    [
+        'id' => 3,
+        'slug' => '3d-mini-desk-frame',
+        'title' => '3D Mini Desk Frame',
+        'eyebrow' => 'Compact Elegance',
+        'subtitle' => 'Perfect small-format keepsake frames designed for work desks and bedside tables.',
+        'banner_image' => 'images/banners/mini-desk-banner.jpg',
+        'description' => 'Bring warmth to your workspace or nightstand. Our 3D Mini Desk Frames combine compact dimensions with rich multi-layer detailing, making them perfect spontaneous gifts.',
+        'features' => [
+            'Compact desk-friendly footprint',
+            'Built-in sturdy rear easel stand',
+            'Custom photo slot with mini 3D embellishments',
+        ],
+        'materials' => 'Solid Wood, Acrylic Accents, Glass',
+        'care' => 'Wipe clean with a soft dry cloth.',
+    ],
+];
