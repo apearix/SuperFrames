@@ -1,0 +1,115 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+@source "../../storage/framework/views/*.php";
+@source "../views/**/*.blade.php";
+
+/* ==========================================================================
+   SuperFrames Theme
+   ========================================================================== */
+
+@theme {
+    /* ===============================================================
+       Colors
+       =============================================================== */
+
+    --color-primary: #0e2b6d;
+    --color-primary-hover: #123887;
+
+    --color-secondary: #c89a4b;
+    --color-secondary-hover: #b58436;
+
+    --color-heading: #1f2937;
+    --color-body: #4b5563;
+
+    --color-background: #fbf9f5;
+    --color-section: #f3f0e9;
+    --color-surface: #ffffff;
+
+    --color-border: #e5e7eb;
+
+    --color-success: #16a34a;
+    --color-warning: #f59e0b;
+    --color-danger: #dc2626;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /* ===============================================================
+       Typography
+       =============================================================== */
+
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-body: "Roboto", ui-sans-serif, system-ui, sans-serif;
+    --font-eyebrow: "Playwrite CU", cursive;
+    --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-body);
+    font-family: var(--font-body);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Default Heading Font */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--color-heading);
+}
+
+/* Form Elements */
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Text Selection */
+
+::selection {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-hover);
+}
