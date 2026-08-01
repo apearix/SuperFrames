@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="@yield('title', 'SuperFrames | Handcrafted Photo Frames')">
     <meta property="og:description" content="@yield('meta_description', 'Celebrate life\'s special moments with beautifully handcrafted, fully personalized photo frames.')">
-    <meta property="og:image" content="@yield('og_image', asset('images/banners/og-banner.jpg'))">
+    <meta property="og:image" content="@yield('og_image', 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1200')">
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">

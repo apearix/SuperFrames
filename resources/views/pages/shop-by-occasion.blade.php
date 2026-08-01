@@ -44,7 +44,7 @@
                     <!-- Card Image Banner -->
                     <div class="relative h-60 overflow-hidden bg-[var(--color-section)]">
                         <img 
-                            src="{{ asset($occ['banner_image'] ?? 'images/banners/anniversary-banner.jpg') }}" 
+                            src="{{ asset($occ['banner_image'] ?? 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1000') }}" 
                             alt="{{ $occ['title'] }}" 
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             loading="lazy"

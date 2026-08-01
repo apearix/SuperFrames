@@ -1,68 +1,64 @@
-<div class="contact-info-section py-8 px-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-    <div class="space-y-6">
+@php
+    $occasions = include resource_path('data/occasions.php');
+@endphp
+
+<section class="py-16 md:py-24 bg-[var(--color-background)]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Contact Heading -->
-        <div class="border-b pb-4 dark:border-gray-700">
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Get in Touch</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">We’re here to help. Reach out to us through any of these channels.</p>
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="font-eyebrow text-2xl text-[var(--color-primary)] block mb-1">
+                Gifts for Every Milestone ♡
+            </span>
+            <h2 class="font-heading text-4xl sm:text-5xl font-bold text-[var(--color-primary)] tracking-tight">
+                Shop by Occasion
+            </h2>
+            <div class="flex items-center justify-center gap-2 my-3 text-[var(--color-secondary)]">
+                <span class="h-[1px] w-12 bg-[var(--color-secondary)]/30"></span>
+                <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
+                <span class="h-[1px] w-12 bg-[var(--color-secondary)]/30"></span>
+            </div>
+            <p class="text-[var(--color-body)] text-sm sm:text-base leading-relaxed">
+                Find the perfect handcrafted photo frame tailored for anniversaries, birthdays, babies, weddings, and special memories.
+            </p>
         </div>
 
-        <!-- Address -->
-        <div class="flex items-start space-x-3">
-            <div class="text-primary mt-1">
-                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-            </div>
-            <div>
-                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Our Location</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mt-0.5">123 SuperFrames Street, Suite 100<br>City, State, Zip Code</p>
-            </div>
-        </div>
+        <!-- Occasions Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            @foreach($occasions as $occ)
+                <a 
+                    href="/occasion/{{ $occ['slug'] }}" 
+                    class="group relative bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                >
+                    <!-- Card Image Banner -->
+                    <div class="relative h-52 overflow-hidden bg-[var(--color-section)]">
+                        <img 
+                            src="{{ asset($occ['banner_image'] ?? 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800') }}" 
+                            alt="{{ $occ['title'] }}" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="font-eyebrow text-xs text-[var(--color-secondary)] block mb-1">
+                                {{ $occ['eyebrow'] ?? 'Made for Memories' }}
+                            </span>
+                            <h3 class="font-heading text-xl font-bold text-white drop-shadow-xs">
+                                {{ $occ['title'] }}
+                            </h3>
+                        </div>
+                    </div>
 
-        <!-- Phone -->
-        <div class="flex items-start space-x-3">
-            <div class="text-primary mt-1">
-                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                </svg>
-            </div>
-            <div>
-                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Phone Number</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mt-0.5">
-                    <a href="tel:+11234567890" class="hover:underline">+1 (123) 456-7890</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Email -->
-        <div class="flex items-start space-x-3">
-            <div class="text-primary mt-1">
-                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-            </div>
-            <div>
-                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Email Address</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mt-0.5">
-                    <a href="mailto:info@superframes.com" class="hover:underline">info@superframes.com</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Business Hours -->
-        <div class="flex items-start space-x-3">
-            <div class="text-primary mt-1">
-                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-            </div>
-            <div>
-                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Working Hours</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mt-0.5">Mon - Fri: 9:00 AM – 6:00 PM</p>
-            </div>
+                    <!-- Card Body -->
+                    <div class="p-5 flex items-center justify-between border-t border-[var(--color-border)]/60 bg-white">
+                        <span class="text-xs font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors">
+                            Explore {{ $occ['title'] }}
+                        </span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 text-[var(--color-primary)] group-hover:translate-x-1 group-hover:text-[var(--color-secondary)] transition-all"></i>
+                    </div>
+                </a>
+            @endforeach
         </div>
 
     </div>
-</div>
+</section>

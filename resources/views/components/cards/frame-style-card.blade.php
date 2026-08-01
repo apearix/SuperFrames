@@ -3,7 +3,7 @@
 <div class="group bg-white rounded-3xl border border-[var(--color-border)] overflow-hidden shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
     <div class="relative h-60 overflow-hidden bg-[var(--color-section)]">
         <img 
-            src="{{ asset($style['banner_image'] ?? $style['image'] ?? 'images/products/forever-together.jpg') }}" 
+            src="{{ asset($style['banner_image'] ?? $style['image'] ?? 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800') }}" 
             alt="{{ $style['title'] }}" 
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"

@@ -18,7 +18,7 @@
                 
                 {{-- Memory Preview Image --}}
                 <div class="rounded-3xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-xl border border-gray-100 dark:border-gray-700">
-                    <img src="{{ $memory['image'] ?? asset('images/placeholder.jpg') }}" alt="{{ $memory['title'] ?? 'Memory Showcase' }}" class="w-full h-auto object-cover">
+                    <img src="{{ $memory['image'] ?? 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=800' }}" alt="{{ $memory['title'] ?? 'Memory Showcase' }}" class="w-full h-auto object-cover">
                 </div>
 
                 {{-- Memory Details & Info --}}

@@ -8,7 +8,7 @@
             @forelse($items as $item)
                 <div class="swiper-slide">
                     <div class="aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 shadow-sm relative group">
-                        <img src="{{ $item['image'] ?? asset('images/placeholder.jpg') }}" alt="{{ $item['caption'] ?? 'Gallery' }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="{{ $item['image'] ?? 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=800' }}" alt="{{ $item['caption'] ?? 'Gallery' }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
                             <span class="text-white text-sm font-medium">{{ $item['caption'] ?? '' }}</span>
                         </div>

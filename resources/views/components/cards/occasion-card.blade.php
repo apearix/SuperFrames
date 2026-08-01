@@ -3,7 +3,7 @@
 <div class="group bg-white rounded-3xl border border-[var(--color-border)] overflow-hidden shadow-2xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
     <div class="relative h-56 overflow-hidden bg-[var(--color-section)]">
         <img 
-            src="{{ asset($occasion['banner_image'] ?? 'images/banners/anniversary-banner.jpg') }}" 
+            src="{{ asset($occasion['banner_image'] ?? 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=800') }}" 
             alt="{{ $occasion['title'] }}" 
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"

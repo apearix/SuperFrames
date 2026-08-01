@@ -9,7 +9,7 @@
                 <div class="swiper-slide h-auto">
                     <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-gray-100 dark:border-gray-700 flex flex-col h-full">
                         <div class="aspect-video relative overflow-hidden bg-gray-100">
-                            <img src="{{ $post['image'] ?? asset('images/placeholder.jpg') }}" alt="{{ $post['title'] ?? 'Blog' }}" class="w-full h-full object-cover">
+                            <img src="{{ $post['image'] ?? 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800' }}" alt="{{ $post['title'] ?? 'Blog' }}" class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex flex-col flex-grow">
                             <span class="text-xs font-semibold text-primary mb-2 inline-block">{{ $post['category'] ?? 'Article' }}</span>

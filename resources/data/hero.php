@@ -6,7 +6,7 @@ return [
         'eyebrow' => 'Handcrafted with Love',
         'title' => 'Handmade Frames for Every Precious Memory',
         'description' => 'Celebrate life\'s special moments with beautifully handcrafted, fully personalized photo frames designed to preserve your memories forever.',
-        'image' => 'images/hero/hero-frame-1.jpg',
+        'image' => 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1600',
         'primary_cta' => [
             'text' => 'Explore Collection',
             'link' => '/shop-by-frame-style',
@@ -21,7 +21,7 @@ return [
         'eyebrow' => 'Memories That Last',
         'title' => 'Turn Your Special Stories Into Timeless 3D Art',
         'description' => 'Custom 3D shadow boxes with delicate LED lighting, tailored figures, and laser-engraved personal notes.',
-        'image' => 'images/hero/hero-frame-2.jpg',
+        'image' => 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=1600',
         'primary_cta' => [
             'text' => 'View Bestsellers',
             'link' => '/best-sellers',

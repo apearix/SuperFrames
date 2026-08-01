@@ -7,7 +7,7 @@
         <div class="swiper-wrapper">
             @forelse($slides as $slide)
                 <div class="swiper-slide relative bg-gray-900 text-white min-h-[420px] md:min-h-[520px] flex items-center">
-                    <img src="{{ $slide['image'] ?? asset('images/hero-bg.jpg') }}" alt="{{ $slide['title'] ?? 'Hero' }}" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                    <img src="{{ $slide['image'] ?? 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1600' }}" alt="{{ $slide['title'] ?? 'Hero' }}" class="absolute inset-0 w-full h-full object-cover opacity-60">
                     <div class="relative z-10 max-w-2xl px-8 md:px-16 py-12">
                         @if(isset($slide['badge']))
                             <span class="bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">{{ $slide['badge'] }}</span>

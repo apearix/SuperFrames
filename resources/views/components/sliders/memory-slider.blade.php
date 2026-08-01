@@ -9,7 +9,7 @@
                 <div class="swiper-slide">
                     <div class="bg-white dark:bg-gray-800 p-3 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm text-center">
                         <div class="aspect-[4/5] rounded-xl overflow-hidden mb-3 bg-gray-100">
-                            <img src="{{ $memory['image'] ?? asset('images/placeholder.jpg') }}" alt="{{ $memory['title'] ?? 'Memory' }}" class="w-full h-full object-cover">
+                            <img src="{{ $memory['image'] ?? 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=800' }}" alt="{{ $memory['title'] ?? 'Memory' }}" class="w-full h-full object-cover">
                         </div>
                         <h4 class="font-bold text-gray-800 dark:text-gray-100 text-sm">{{ $memory['title'] ?? 'Wall of Memories' }}</h4>
                         <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{{ $memory['date'] ?? '' }}</p>

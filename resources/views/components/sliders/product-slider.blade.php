@@ -9,7 +9,7 @@
                 <div class="swiper-slide">
                     <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-md transition duration-300">
                         <div class="aspect-square bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
-                            <img src="{{ $product['image'] ?? asset('images/placeholder.jpg') }}" alt="{{ $product['title'] ?? 'Product' }}" class="w-full h-full object-cover">
+                            <img src="{{ $product['image'] ?? 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=800' }}" alt="{{ $product['title'] ?? 'Product' }}" class="w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <h3 class="font-bold text-gray-900 dark:text-white text-base line-clamp-1">{{ $product['title'] ?? 'Custom Frame' }}</h3>

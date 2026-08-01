@@ -82,7 +82,7 @@
                     target="_blank"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--color-primary)] text-white text-sm font-medium hover:bg-[var(--color-primary-hover)] transition-colors shadow-xs"
                 >
-                    <i data-lucide="edit-3" class="w-4 h-4 text-[var(--color-secondary)]"></i>
+                    <i data-lucide="square-pen" class="w-4 h-4 text-white"></i>
                     <span>Customize Now</span>
                 </a>
                 <a 

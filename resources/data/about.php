@@ -5,7 +5,7 @@ return [
         'name' => 'Shailendra',
         'role' => 'Founder & Master Craftsman',
         'bio' => 'Super Frames started with a simple belief that every memory deserves more than just a photograph. What began as a passion for handcrafted art has grown into creating personalized frames that celebrate love, family, friendships, milestones, and life\'s most meaningful moments.',
-        'image' => 'images/about/shailendra-creator.jpg',
+        'image' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800',
         'signature_text' => 'Shailendra'
     ],
     'values' => [
@@ -45,25 +45,25 @@ return [
             'step' => 1,
             'title' => 'Design',
             'description' => 'Understanding your ideas and creating a personalized concept.',
-            'image' => 'images/about/process-design.jpg'
+            'image' => 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800'
         ],
         [
             'step' => 2,
             'title' => 'Crafting',
             'description' => 'Every frame is handcrafted with care using premium materials.',
-            'image' => 'images/about/process-crafting.jpg'
+            'image' => 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=800'
         ],
         [
             'step' => 3,
             'title' => 'Quality Check',
             'description' => 'Each creation is carefully inspected before dispatch.',
-            'image' => 'images/about/process-quality.jpg'
+            'image' => 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800'
         ],
         [
             'step' => 4,
             'title' => 'Delivery',
             'description' => 'Beautifully packed and delivered safely to your doorstep.',
-            'image' => 'images/about/process-delivery.jpg'
+            'image' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800'
         ]
     ]
 ];

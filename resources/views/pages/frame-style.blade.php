@@ -28,7 +28,7 @@
                         @forelse($frames ?? [] as $frame)
                             <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
                                 <div class="aspect-square bg-gray-100 dark:bg-gray-700 relative overflow-hidden">
-                                    <img src="{{ $frame['image'] ?? asset('images/placeholder.jpg') }}" alt="{{ $frame['title'] ?? 'Frame' }}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                                    <img src="{{ $frame['image'] ?? 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800' }}" alt="{{ $frame['title'] ?? 'Frame' }}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                                 </div>
                                 <div class="p-4 flex flex-col flex-grow justify-between">
                                     <div>

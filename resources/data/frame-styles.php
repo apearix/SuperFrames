@@ -7,7 +7,7 @@ return [
         'title' => '3D Shadow Box Frame',
         'eyebrow' => 'Crafted with Love, Made for Memories',
         'subtitle' => 'Intricate multi-layered wooden frames with warm ambient LED lighting.',
-        'banner_image' => 'images/banners/shadow-box-banner.jpg',
+        'banner_image' => 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1200',
         'description' => 'Our handcrafted 3D Shadow Box Frames add depth, warmth, and emotion to your cherished photos. Featuring precision laser-cut wooden elements, miniature handcrafted figurines, and energy-efficient LED fairy lights, every frame becomes a stunning illuminated art piece.',
         'features' => [
             'Handcrafted MDF wood box construction',
@@ -25,7 +25,7 @@ return [
         'title' => 'Quilling Name Frame',
         'eyebrow' => 'Paper Artistry at Its Finest',
         'subtitle' => 'Delicate paper quilling designs forming names, initials, and floral wreaths.',
-        'banner_image' => 'images/banners/quilling-banner.jpg',
+        'banner_image' => 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1200',
         'description' => 'Celebrate birthdays, weddings, and anniversaries with custom paper quilling art. Each floral petal and alphabet curve is meticulously rolled and shaped by hand using high-gsm acid-free paper strips.',
         'features' => [
             '100% hand-rolled acid-free paper quilling',
@@ -42,7 +42,7 @@ return [
         'title' => '3D Mini Desk Frame',
         'eyebrow' => 'Compact Elegance',
         'subtitle' => 'Perfect small-format keepsake frames designed for work desks and bedside tables.',
-        'banner_image' => 'images/banners/mini-desk-banner.jpg',
+        'banner_image' => 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=1200',
         'description' => 'Bring warmth to your workspace or nightstand. Our 3D Mini Desk Frames combine compact dimensions with rich multi-layer detailing, making them perfect spontaneous gifts.',
         'features' => [
             'Compact desk-friendly footprint',

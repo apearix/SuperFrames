@@ -8,7 +8,7 @@
             @forelse($occasions as $occasion)
                 <div class="swiper-slide">
                     <a href="{{ $occasion['url'] ?? '#' }}" class="group block relative rounded-2xl overflow-hidden aspect-[3/4] shadow-md">
-                        <img src="{{ $occasion['image'] ?? asset('images/placeholder.jpg') }}" alt="{{ $occasion['name'] ?? 'Occasion' }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="{{ $occasion['image'] ?? 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=800' }}" alt="{{ $occasion['name'] ?? 'Occasion' }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4">
                             <div>
                                 <h3 class="text-white font-bold text-lg">{{ $occasion['name'] ?? 'Occasion' }}</h3>
