@@ -5,18 +5,17 @@
 @section('content')
     <!-- 1. Hero Section -->
     <x-sections.hero />
-
-    <!-- 2. Shop by Frame Style -->
-    <x-sections.shop-by-frame-style />
-
-    <!-- 3. Shop by Occasion -->
     <x-sections.shop-by-occasion />
+    <x-sections.shop-by-frame-style /> 
+    <x-sections.memory-wall />
+    <x-sections.latest-blogs /> 
+    
+    {{--  
 
     <!-- 4. Best Sellers -->
     <x-sections.best-sellers />
 
     <!-- 5. Customer Memory Wall -->
-    <x-sections.memory-wall />
 
     <!-- 6. Customer Testimonials -->
     <x-sections.testimonials />
@@ -25,11 +24,10 @@
     <x-sections.cta />
 
     <!-- 8. Latest Blogs -->
-    <x-sections.latest-blogs />
 
     <!-- 9. Instagram Feed -->
     <x-sections.instagram-feed />
 
     <!-- 10. Frequently Asked Questions -->
-    <x-sections.faq />
+    <x-sections.faq /> --}}
 @endsection

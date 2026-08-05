@@ -46,6 +46,43 @@
     --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-up-delayed {
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    opacity: 0;
+}
+
+.animate-fade-right {
+    animation: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 /* ==========================================================================
    Global Styles
    ========================================================================== */
@@ -111,4 +148,41 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-hover);
+}
+ 
+.hero-swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: #cbd5e1;
+    transition: all 0.35s ease;
+    margin: 0 4px !important;
+}
+
+.hero-swiper-pagination .swiper-pagination-bullet-active {
+    width: 34px;
+    border-radius: 999px;
+    background: var(--color-primary);
+}
+
+/* Active and Inactive Swiper Sizing Effect for Blog Carousel */
+@media (min-width: 1024px) {
+    .latest-blog-swiper .swiper-slide {
+        width: 32% !important;
+        transition: all 0.5s ease;
+    }
+
+    .latest-blog-swiper .swiper-slide-active {
+        width: 55% !important;
+    }
+
+    .latest-blog-swiper .swiper-slide-active .blog-title {
+        font-size: 2.25rem !important; /* text-4xl equivalent */
+        line-height: 2.5rem !important;
+    }
+
+    .latest-blog-swiper .swiper-slide:not(.swiper-slide-active) .blog-title {
+        font-size: 1.5rem !important; /* text-2xl equivalent */
+        line-height: 2rem !important;
+    }
 }

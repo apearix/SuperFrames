@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 // Home Page
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('home');
 
 // Best Sellers Listing
 Route::get('/best-sellers', function () {

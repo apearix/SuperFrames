@@ -21,7 +21,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
 </head>
-<body class="min-h-full bg-[var(--color-background)] text-[var(--color-body)] font-body antialiased flex flex-col justify-between selection:bg-[var(--color-primary)] selection:text-white">
+<!-- CHANGES HERE: Removed 'justify-between' from body -->
+<body class="min-h-full bg-[var(--color-background)] text-[var(--color-body)] font-body antialiased flex flex-col selection:bg-[var(--color-primary)] selection:text-white">
 
     <!-- Top Navigation Header with Integrated Mobile Menu -->
     @include('partials.navbar')
@@ -36,9 +37,6 @@
 
     <!-- Scroll To Top Button -->
     @include('partials.scroll-top')
-
-    <!-- Global Footer Newsletter -->
-    @include('partials.newsletter')
 
     <!-- Main Global Footer -->
     @include('partials.footer')

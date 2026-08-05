@@ -1,40 +1,45 @@
 <div x-data="{ mobileMenuOpen: false }">
-    <header class="sticky top-0 z-40 bg-[#FBF9F5]/95 backdrop-blur-md border-b border-[var(--color-border)] shadow-2xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="fixed w-full top-0 z-40 bg-[#FBF9F5]/95 backdrop-blur-md border-b border-[var(--color-border)] shadow-2xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="flex items-center justify-between h-20">
 
                 <!-- Brand Logo -->
                 <a href="/" class="flex items-center gap-3 shrink-0 focus:outline-hidden">
-                    <div
-                        class="w-11 h-11 border-2 border-[var(--color-secondary)] bg-[#FDFBF7] flex items-center justify-center rounded-sm shrink-0">
-                        <span
-                            class="font-heading font-bold text-2xl text-[var(--color-secondary)] tracking-tighter">SF</span>
+                    <div class="w-11 h-11">
+                        <img src="/images/logo.png" alt="Super Frames Logo" class="w-11 h-11 object-contain">
                     </div>
+
                     <div class="flex flex-col">
                         <span
-                            class="font-heading font-bold text-lg sm:text-xl tracking-wider text-[var(--color-primary)] leading-none">SUPER
-                            FRAMES</span>
-                        <span
-                            class="text-[10px] sm:text-[11px] text-[var(--color-primary)]/80 tracking-wide mt-1 font-sans">Framing
-                            Memories, Forever</span>
+                            class="font-heading font-semibold text-lg sm:text-xl text-[var(--color-primary)] leading-none">
+                            SUPER FRAMES
+                        </span>
+                        <span class="text-xs sm:text-xs text-[var(--color-primary)] mt-1 font-sans">
+                            Framing Memories, Forever
+                        </span>
                     </div>
                 </a>
 
                 <!-- Desktop Navigation Links -->
                 <nav class="hidden lg:flex items-center gap-8" aria-label="Main Navigation">
-                    <a href="/" class="text-base font-medium text-[var(--color-primary)] transition-colors">Home</a>
+                    <a href="/"
+                        class="text-base font-medium text-[var(--color-primary)] transition-colors">Home</a>
                     <a href="/shop-by-occasion"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Shop by Occasion</a>
                     <a href="/shop-by-frame-style"
-                        class="text-base font-medium text-[var(--color-primary)] transition-colors">Shop by Frame Style</a>
-                    <a href="/best-sellers" class="text-base font-medium text-[var(--color-primary)] transition-colors">Best
+                        class="text-base font-medium text-[var(--color-primary)] transition-colors">Shop by Frame
+                        Style</a>
+                    <a href="/best-sellers"
+                        class="text-base font-medium text-[var(--color-primary)] transition-colors">Best
                         Sellers</a>
                     <a href="/gallery"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Gallery</a>
                     <a href="/about" class="text-base font-medium text-[var(--color-primary)] transition-colors">Our
                         Story</a>
-                    <a href="/blog" class="text-base font-medium text-[var(--color-primary)] transition-colors">Blog</a>
-                    <a href="/contact" class="text-base font-medium text-[var(--color-primary)] transition-colors">Contact
+                    <a href="/blog"
+                        class="text-base font-medium text-[var(--color-primary)] transition-colors">Blog</a>
+                    <a href="/contact"
+                        class="text-base font-medium text-[var(--color-primary)] transition-colors">Contact
                         Us</a>
                 </nav>
 
@@ -71,13 +76,14 @@
     </header>
 
     <!-- Mobile Drawer Container -->
-    <div @keydown.escape.window="mobileMenuOpen = false" x-show="mobileMenuOpen"
-        class="relative z-50 lg:hidden" style="display: none;" role="dialog" aria-modal="true">
+    <div @keydown.escape.window="mobileMenuOpen = false" x-show="mobileMenuOpen" class="relative z-50 lg:hidden"
+        style="display: none;" role="dialog" aria-modal="true">
         <!-- Backdrop Overlay -->
         <div x-show="mobileMenuOpen" x-transition:enter="transition-opacity ease-linear duration-300"
             x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
             x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0" class="fixed inset-0 bg-black/60 backdrop-blur-xs" @click="mobileMenuOpen = false">
+            x-transition:leave-end="opacity-0" class="fixed inset-0 bg-black/60 backdrop-blur-xs"
+            @click="mobileMenuOpen = false">
         </div>
 
         <!-- Drawer Panel -->

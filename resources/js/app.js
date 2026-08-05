@@ -12,6 +12,9 @@ import { initHeroSlider } from './hero-slider';
 import { initLightbox } from './lightbox';
 import { initNavbarScroll } from './navbar';
 import { initTabs } from './tabs';
+import { initFrameStyleSlider } from './frame-style'; // <-- ADD THIS
+import { initOccasionSlider } from './occasion-slider';
+import { initLatestBlogSlider } from './latest-blog-slider';
 
 // Register Alpine plugins & Expose Globally
 Alpine.plugin(collapse);
@@ -35,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initAnimations();
     initFilters();
     initTabs();
+    initFrameStyleSlider(); // <-- ADD THIS
+    initOccasionSlider();
+    initLatestBlogSlider();
 });
 
 // Refresh Lucide Icons Helper
