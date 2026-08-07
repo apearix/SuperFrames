@@ -24,11 +24,11 @@
                 <nav class="hidden lg:flex items-center gap-8" aria-label="Main Navigation">
                     <a href="/"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Home</a>
-                    <a href="/shop-by-occasion"
+                    {{-- <a href="/shop-by-occasion"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Shop by Occasion</a>
                     <a href="/shop-by-frame-style"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Shop by Frame
-                        Style</a>
+                        Style</a> --}}
                     <a href="/best-sellers"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Best
                         Sellers</a>
@@ -113,12 +113,12 @@
                 <nav class="p-6 flex flex-col gap-3">
                     <a href="/" @click="mobileMenuOpen = false"
                         class="text-sm font-semibold text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]/60 hover:text-[var(--color-secondary)] transition-colors">Home</a>
-                    <a href="/shop-by-occasion" @click="mobileMenuOpen = false"
+                    {{-- <a href="/shop-by-occasion" @click="mobileMenuOpen = false"
                         class="text-sm font-semibold text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]/60 hover:text-[var(--color-secondary)] transition-colors">Shop
                         by Occasion</a>
                     <a href="/shop-by-frame-style" @click="mobileMenuOpen = false"
                         class="text-sm font-semibold text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]/60 hover:text-[var(--color-secondary)] transition-colors">Shop
-                        by Frame Style</a>
+                        by Frame Style</a> --}}
                     <a href="/best-sellers" @click="mobileMenuOpen = false"
                         class="text-sm font-semibold text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]/60 hover:text-[var(--color-secondary)] transition-colors">Best
                         Sellers</a>

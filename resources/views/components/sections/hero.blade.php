@@ -33,7 +33,7 @@
                                 <!-- Decorative Heart Line -->
                                 <div class="flex items-center justify-center lg:justify-start gap-2 mb-4 sm:mb-6 text-[var(--color-secondary)]">
                                     <span class="h-[1px] w-10 lg:w-12 bg-[var(--color-secondary)]/40"></span>
-                                    <i data-lucide="heart" class="w-3 h-3 lg:w-3.5 lg:h-3.5 fill-current"></i>
+                                    <i data-lucide="heart" class="w-3 h-3 lg:w-3.5 lg:h-3.5"></i>
                                     <span class="h-[1px] w-20 lg:w-24 bg-[var(--color-secondary)]/40"></span>
                                 </div>
 

@@ -6,7 +6,7 @@
     moments.')
 
 @section('content')
-    <div class="bg-[var(--color-background)] min-h-screen py-20">
+    <div class="bg-[var(--color-background)] min-h-screen pt-20">
         <!-- 1. HERO BANNER -->
         <section
             class="relative w-full min-h-[350px]  bg-[#FCFAF6] py-12 md:py-16 overflow-hidden border-b border-[var(--color-border)]">
@@ -27,7 +27,7 @@
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
 
                     <!-- Text Content -->
                     <div>
@@ -52,7 +52,7 @@
 
 
         <!-- 2. FILTER BAR SECTION -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 -mt-6 relative z-20">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 -mt-6 relative z-20 mb-6">
             <form id="filter-form" action="{{ url('/products') }}" method="GET"
                 class="bg-white p-4 sm:p-6 rounded-2xl shadow-md border border-[var(--color-border)]">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
@@ -125,7 +125,7 @@
         </section>
 
         <!-- 3. PRODUCTS GRID -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 mt-12">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 mb-6">
             @if ($products->count() > 0)
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     @foreach ($products as $product)
@@ -170,7 +170,7 @@
         </section>
 
         <!-- 5. HELP CTA BANNER -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 mt-8 relative overflow-hidden">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6  relative overflow-hidden mb-6">
 
             <div
                 class=" bg-[#ead5c2] rounded-3xl border border-[var(--color-border)] p-8 md:p-12 text-center relative overflow-hidden shadow-xs">

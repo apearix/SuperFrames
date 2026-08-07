@@ -78,7 +78,7 @@
                     <div class="flex flex-wrap gap-3 mb-8">
                         <span
                             class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--color-section)] text-sm font-medium text-[var(--color-primary)]">
-                            <i data-lucide="heart" class="w-3.5 h-3.5 text-[var(--color-primary)] fill-current"></i>
+                            <i data-lucide="heart" class="w-3.5 h-3.5 text-[var(--color-primary)]"></i>
                             {{ $product['occasion'] }}
                         </span>
                         <span
@@ -205,6 +205,7 @@
                     @endforeach
                 </div>
             </div>
+
             <!-- Customer Memory Wall Section -->
             <x-sections.memory-wall />
 

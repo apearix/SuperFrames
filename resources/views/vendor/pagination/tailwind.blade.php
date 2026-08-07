@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-<nav class="flex justify-center items-center gap-8 mt-14" role="navigation">
+<nav class="flex justify-center items-center gap-6 mt-10" role="navigation">
 
     {{-- Previous --}}
     @if ($paginator->onFirstPage())

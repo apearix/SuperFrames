@@ -15,11 +15,12 @@
             </h2>
             <div class="flex items-center justify-center gap-2 my-3 text-[var(--color-secondary)]">
                 <span class="h-[1px] w-12 bg-[var(--color-secondary)]/30"></span>
-                <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="heart" class="w-4 h-4"></i>
                 <span class="h-[1px] w-12 bg-[var(--color-secondary)]/30"></span>
             </div>
             <p class="text-[var(--color-body)] text-base">
-                Discover creative ideas, gifting inspiration, and thoughtful ways to preserve life's most cherished memories.
+                Discover creative ideas, gifting inspiration, and thoughtful ways to preserve life's most cherished
+                memories.
             </p>
         </div>
 
@@ -51,11 +52,14 @@
                                     loading="lazy">
 
                                 <!-- Vignette Gradient Overlay -->
-                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
+                                </div>
 
                                 <!-- Card Content -->
-                                <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 text-white flex flex-col items-start">
-                                    <h3 class="font-heading text-2xl sm:text-3xl font-bold mb-3 tracking-tight text-white drop-shadow-xs">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 text-white flex flex-col items-start">
+                                    <h3
+                                        class="font-heading text-2xl sm:text-3xl font-bold mb-3 tracking-tight text-white drop-shadow-xs">
                                         {{ $blog['title'] }}
                                     </h3>
 
@@ -63,7 +67,8 @@
                                         {{ $blog['excerpt'] }}
                                     </p>
 
-                                    <span class="inline-flex items-center gap-2 border-b border-white pb-1 text-sm sm:text-base font-medium group-hover:text-[var(--color-secondary)] transition-colors">
+                                    <span
+                                        class="inline-flex items-center gap-2 border-b border-white pb-1 text-sm sm:text-base font-medium group-hover:text-[var(--color-secondary)] transition-colors">
                                         <span>Read More</span>
                                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                                     </span>
@@ -93,7 +98,8 @@
         <a href="/blog"
             class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-[var(--color-primary)] text-[var(--color-primary)] font-medium text-sm hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300 shadow-xs group">
             <span>View All Blogs</span>
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform fill-none stroke-current"
+                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
         </a>

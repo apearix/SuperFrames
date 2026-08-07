@@ -5,7 +5,8 @@
 @endphp
 
 @section('title', 'Blog | Super Frames')
-@section('meta_description', 'Discover creative ideas, gifting inspiration, and thoughtful ways to preserve life\'s most
+@section('meta_description',
+    'Discover creative ideas, gifting inspiration, and thoughtful ways to preserve life\'s most
     cherished memories.')
 
 @section('content')
@@ -29,7 +30,7 @@
                 </h1>
                 <div class="flex items-center justify-center gap-2 my-3 text-[var(--color-secondary)]">
                     <span class="h-[1px] w-12 bg-[var(--color-secondary)]/30"></span>
-                    <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="heart" class="w-4 h-4"></i>
                     <span class="h-[1px] w-12 bg-[var(--color-secondary)]/30"></span>
                 </div>
                 <p class="text-[var(--color-body)] text-base">
