@@ -2,7 +2,7 @@
     $faqs = include resource_path('data/faqs.php');
 @endphp
 
-<section class="py-16 md:py-24 bg-[var(--color-background)]">
+<section class="py-16  bg-[var(--color-background)]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Heading -->

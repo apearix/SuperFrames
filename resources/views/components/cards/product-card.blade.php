@@ -1,7 +1,9 @@
 @props(['product'])
 
-<div class="group bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col justify-between">
-    <div class="relative aspect-square overflow-hidden bg-[var(--color-section)]">
+<div class="group bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+    
+    <!-- Image Area -->
+    <div class="relative h-64 overflow-hidden bg-[var(--color-section)]">
         <img 
             src="{{ asset($product['image']) }}" 
             alt="{{ $product['title'] }}" 
@@ -15,31 +17,49 @@
         @endif
     </div>
 
+    <!-- Content Area -->
     <div class="p-5 flex-1 flex flex-col justify-between">
         <div>
-            <span class="text-[10px] text-[var(--color-secondary)] font-semibold uppercase tracking-wider block mb-1">
-                {{ $product['style'] ?? $product['occasion'] }}
-            </span>
-            <h3 class="font-heading text-lg font-bold text-[var(--color-primary)] mb-1">
-                <a href="{{ $product['link'] ?? '/product/' . $product['slug'] }}" class="hover:text-[var(--color-secondary)] transition-colors">
-                    {{ $product['title'] }}
-                </a>
+            <h3 class="font-serif text-xl font-bold text-[var(--color-primary)] mb-1">
+                {{ $product['title'] }}
             </h3>
+            
+            <p class="text-xs text-gray-500 font-medium mb-2">
+                Starting From <span class="font-bold text-[var(--color-primary)]">₹{{ $product['price'] }}</span>
+            </p>
+
             <p class="text-xs text-[var(--color-body)] line-clamp-2 mb-4 leading-relaxed">
                 {{ $product['tagline'] ?? '' }}
             </p>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5 mb-6">
+                @if(!empty($product['style']))
+                    <span class="text-[10px] font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md">
+                        {{ $product['style'] }}
+                    </span>
+                @endif
+                @if(!empty($product['occasion']))
+                    <span class="text-[10px] font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md">
+                        {{ $product['occasion'] }}
+                    </span>
+                @endif
+            </div>
         </div>
 
-        <div class="flex items-center justify-between pt-3 border-t border-[var(--color-border)]/60">
-            <span class="font-heading font-bold text-lg text-[var(--color-primary)]">
-                ₹{{ $product['price'] }}
-            </span>
+        <!-- Action Buttons -->
+        <div class="space-y-2 pt-2 border-t border-gray-100">
             <a 
                 href="{{ $product['link'] ?? '/product/' . $product['slug'] }}" 
-                class="inline-flex items-center gap-1 text-xs font-semibold text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
+                class="w-full inline-flex items-center justify-center px-4 py-2 bg-[#0b2148] hover:bg-[#112a58] text-white text-xs font-semibold rounded-lg transition-colors"
             >
-                <span>Customize</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                View Details
+            </a>
+            <a 
+                href="{{ $product['link'] ?? '/product/' . $product['slug'] }}" 
+                class="w-full inline-flex items-center justify-center px-4 py-2 bg-white hover:bg-gray-50 text-[#0b2148] border border-[#0b2148] text-xs font-semibold rounded-lg transition-colors"
+            >
+                Customize Now
             </a>
         </div>
     </div>

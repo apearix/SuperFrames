@@ -1,10 +1,9 @@
-
 @php
     $memories = include resource_path('data/memories.php');
 @endphp
 
-<section class="bg-[var(--color-background)] py-10 md:py-16 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6"> 
+<section class="bg-[var(--color-background)] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-0 py-6">
         <!-- Page Header -->
         <div class="text-center max-w-2xl mx-auto mb-12">
             <span class="font-eyebrow text-2xl text-[var(--color-primary)] block mb-1">
@@ -25,7 +24,7 @@
         </div>
 
         <!-- Full Memory Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             @foreach ($memories as $memory)
                 <div
                     class="group relative rounded-2xl overflow-hidden border border-[var(--color-border)] bg-white shadow-xs hover:shadow-lg transition-all duration-300">
@@ -58,18 +57,19 @@
             @endforeach
         </div>
 
-         <!-- Bottom CTA Section matching the reference image exactly -->
+        <!-- Bottom CTA Section matching the reference image exactly -->
         <div class="text-center max-w-xl mx-auto ">
             <p class="text-xl font-medium text-[var(--color-body)] mb-4">
                 Become Our Next Happy Customer
             </p>
-            
+
             <a href="/memories"
                 class="inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-full border border-[var(--color-primary)] text-[var(--color-primary)] text-sm font-medium hover:bg-[var(--color-primary)] hover:text-white transition-all shadow-xs group">
                 <span>View More Memories</span>
-               <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
         </div>
 
     </div>
     </div>
+</section>
