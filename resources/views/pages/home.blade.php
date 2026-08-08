@@ -6,28 +6,26 @@
     <!-- 1. Hero Section -->
     <x-sections.hero />
     <x-sections.shop-by-occasion />
-    <x-sections.shop-by-frame-style /> 
+    <x-sections.shop-by-frame-style />
     <x-sections.memory-wall />
-    <x-sections.latest-blogs /> 
-    
-    {{--  
+    <x-sections.latest-blogs />
+
+
 
     <!-- 4. Best Sellers -->
     <x-sections.best-sellers />
 
-    <!-- 5. Customer Memory Wall -->
-
     <!-- 6. Customer Testimonials -->
     <x-sections.testimonials />
-
-    <!-- 7. Custom Order Call-to-Action -->
-    <x-sections.cta />
-
-    <!-- 8. Latest Blogs -->
 
     <!-- 9. Instagram Feed -->
     <x-sections.instagram-feed />
 
+    <!-- 7. Custom Order Call-to-Action -->
+    <x-sections.cta />
+
     <!-- 10. Frequently Asked Questions -->
-    <x-sections.faq /> --}}
+    <div class="pt-10 pb-4">
+        <x-sections.faq />
+    </div>
 @endsection

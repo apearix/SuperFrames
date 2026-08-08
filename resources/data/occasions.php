@@ -55,7 +55,7 @@ return [
         'slug' => 'graduation',
         'title' => 'Graduation',
         'icon' => 'graduation-cap',
-        'banner_image' => 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1000&auto=format&fit=crop&q=80',
+        'banner_image' => 'https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=1000&auto=format&fit=crop',
     ],
 
     [

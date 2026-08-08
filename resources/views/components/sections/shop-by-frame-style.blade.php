@@ -2,7 +2,7 @@
     $styles = include resource_path('data/frame-styles.php');
 @endphp
 
-<section class="relative py-16 md:py-24 bg-[var(--color-background)] overflow-hidden">
+<section class="relative py-16 md:py-20 bg-[var(--color-secondary)]/10  overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
         <!-- Section Heading -->

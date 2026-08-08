@@ -3,7 +3,7 @@
     $bestsellers = array_filter($products, fn($item) => $item['is_bestseller'] ?? false);
 @endphp
 
-<section class="py-16 md:py-24 bg-[var(--color-background)]">
+<section class="py-16 md:py-20 bg-[var(--color-background)]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <!-- Section Heading -->
         <div class="text-center max-w-2xl mx-auto mb-12">
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Bestsellers Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             @foreach ($bestsellers as $product)
                 <x-cards.product-card :product="$product" />
             @endforeach

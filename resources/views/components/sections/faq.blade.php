@@ -2,7 +2,7 @@
     $faqs = include resource_path('data/faqs.php');
 @endphp
 
-<section class="pt-6 pb-16  bg-[var(--color-background)]">
+<section class="pt-6 pb-16 bg-[var(--color-background)]">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Section Heading -->
@@ -23,15 +23,17 @@
                 <div class="bg-white rounded-xl border border-[var(--color-border)] overflow-hidden shadow-xs">
                     <button type="button"
                         @click="active = (active === {{ $index }} ? null : {{ $index }})"
-                        class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-heading text-lg font-semibold text-[var(--color-primary)] hover:text-[var(--color-primary-hover)] transition-colors">
+                        class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-heading text-lg font-semibold text-[var(--color-primary)] hover:text-[var(--color-primary-hover)] transition-colors focus:outline-none">
                         <span>{{ $faq['question'] }}</span>
                         <i data-lucide="chevron-down" class="w-5 h-5 shrink-0 transition-transform duration-300"
                             :class="{ 'rotate-180': active === {{ $index }} }"></i>
                     </button>
 
-                    <div x-show="active === {{ $index }}" x-collapse
-                        class="px-6 pb-5 text-sm text-[var(--color-body)] leading-relaxed border-t border-[var(--color-border)]/50 pt-3">
-                        {{ $faq['answer'] }}
+                    <!-- Collapse wrapper with inner padding to prevent flicker -->
+                    <div x-show="active === {{ $index }}" x-collapse x-cloak>
+                        <div class="px-6 pb-5 pt-1.5 text-sm text-[var(--color-body)] leading-relaxed border-t border-[var(--color-border)]/50">
+                            {{ $faq['answer'] }}
+                        </div>
                     </div>
                 </div>
             @endforeach

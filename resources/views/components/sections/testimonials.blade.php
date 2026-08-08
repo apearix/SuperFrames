@@ -2,7 +2,7 @@
     $testimonials = include resource_path('data/testimonials.php');
 @endphp
 
-<section class="py-16 md:py-24 bg-[var(--color-section)] border-t border-b border-[var(--color-border)]">
+<section class="py-16 md:py-20 bg-[var(--color-secondary)]/10 border-t border-b border-[var(--color-border)]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
         <!-- Section Header -->

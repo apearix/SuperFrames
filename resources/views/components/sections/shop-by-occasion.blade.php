@@ -2,7 +2,7 @@
     $occasions = include resource_path('data/occasions.php');
 @endphp
 
-<section class="py-16 md:py-24 bg-[var(--color-background)] overflow-hidden">
+<section class="py-16 md:py-20 bg-[var(--color-background)] overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
         <!-- Section Header -->
@@ -68,7 +68,7 @@
             </button>
 
             <!-- Swiper Pagination -->
-            <div class="occasion-pagination swiper-pagination !relative !mt-8 flex justify-center items-center gap-2">
+            <div class="occasion-pagination swiper-pagination !relative !mt-10 flex justify-center items-center gap-2">
             </div>
 
         </div>

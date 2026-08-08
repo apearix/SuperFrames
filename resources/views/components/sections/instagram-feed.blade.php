@@ -6,13 +6,13 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
         <div class="text-center max-w-xl mx-auto mb-10">
-            <span class="font-eyebrow text-xl text-[var(--color-primary)] block mb-1">
-                @superframes ♡
+            <span class="font-eyebrow text-xl text-rose block mb-1">
+                @superframes
             </span>
             <h2 class="font-heading text-3xl font-bold text-[var(--color-primary)]">
                 Follow Us on Instagram
             </h2>
-            <p class="text-xs text-[var(--color-body)] mt-2">
+            <p class="text-sm text-[var(--color-body)] mt-2">
                 Tag us in your photos to get featured on our feed!
             </p>
         </div>

@@ -3,7 +3,7 @@
 @section('title', 'Shipping Info | Super Frames')
 
 @section('content')
-<div class="bg-[var(--color-background)] py-12 md:py-16">
+<div class="bg-[var(--color-background)] py-12 md:py-16 mt-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white rounded-2xl border border-[var(--color-border)] p-8 sm:p-12 shadow-xs">
             <h1 class="font-heading text-3xl sm:text-4xl font-bold text-[var(--color-primary)] mb-6">Shipping & Delivery</h1>

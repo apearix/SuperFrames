@@ -2,8 +2,8 @@
     $memories = include resource_path('data/memories.php');
 @endphp
 
-<section class="bg-[var(--color-background)] relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-0 py-6">
+<section class="py-16 md:py-20 bg-[var(--color-background)] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-0">
         <!-- Page Header -->
         <div class="text-center max-w-2xl mx-auto mb-12">
             <span class="font-eyebrow text-2xl text-[var(--color-primary)] block mb-1">
@@ -63,7 +63,7 @@
                 Become Our Next Happy Customer
             </p>
 
-            <a href="/memories"
+            <a  
                 class="inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-full border border-[var(--color-primary)] text-[var(--color-primary)] text-sm font-medium hover:bg-[var(--color-primary)] hover:text-white transition-all shadow-xs group">
                 <span>View More Memories</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
