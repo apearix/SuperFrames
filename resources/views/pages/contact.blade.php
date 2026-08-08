@@ -3,7 +3,7 @@
 @section('title', 'Contact Us | Super Frames')
 
 @section('content')
-    <div class="space-y-6">
+    <div class="space-y-6 pt-20">
         <section
             class="relative w-full min-h-[350px] lg:h-[350px] bg-[#FCFAF6] overflow-hidden flex flex-col justify-between">
 

@@ -29,7 +29,7 @@
                     <a href="/shop-by-frame-style"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Shop by Frame
                         Style</a> --}}
-                    <a href="/best-sellers"
+                    <a href="/products"
                         class="text-base font-medium text-[var(--color-primary)] transition-colors">Best
                         Sellers</a>
                     <a href="/gallery"
@@ -119,7 +119,7 @@
                     <a href="/shop-by-frame-style" @click="mobileMenuOpen = false"
                         class="text-sm font-semibold text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]/60 hover:text-[var(--color-secondary)] transition-colors">Shop
                         by Frame Style</a> --}}
-                    <a href="/best-sellers" @click="mobileMenuOpen = false"
+                    <a href="/products" @click="mobileMenuOpen = false"
                         class="text-sm font-semibold text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]/60 hover:text-[var(--color-secondary)] transition-colors">Best
                         Sellers</a>
                     <a href="/gallery" @click="mobileMenuOpen = false"

@@ -21,7 +21,7 @@
 @endphp
 
 @section('title', $occasion['title'] . ' | SuperFrames')
-@section('meta_description', $occasion['subtitle'])
+{{-- @section('meta_description', $occasion['subtitle']) --}}
 
 @section('content')
     <div class="bg-[var(--color-background)] py-10 md:py-16">
@@ -40,15 +40,15 @@
             <div
                 class="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden p-8 md:p-12 mb-12 shadow-xs">
                 <div class="max-w-3xl">
-                    <span class="font-eyebrow text-2xl text-[var(--color-primary)] block mb-2">
+                    {{-- <span class="font-eyebrow text-2xl text-[var(--color-primary)] block mb-2">
                         {{ $occasion['eyebrow'] }} ♡
-                    </span>
+                    </span> --}}
                     <h1 class="font-heading text-4xl sm:text-5xl font-bold text-[var(--color-primary)] mb-4">
                         {{ $occasion['title'] }}
                     </h1>
-                    <p class="text-[var(--color-body)] text-base sm:text-lg leading-relaxed">
+                    {{-- <p class="text-[var(--color-body)] text-base sm:text-lg leading-relaxed">
                         {{ $occasion['description'] }}
-                    </p>
+                    </p> --}}
                 </div>
             </div>
 

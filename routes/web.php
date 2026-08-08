@@ -16,9 +16,9 @@ Route::get('/', function () {
 })->name('home');
 
 // Best Sellers Listing
-Route::get('/best-sellers', function () {
-    return view('pages.best-sellers');
-})->name('best-sellers');
+Route::get('/products', function () {
+    return view('pages.products');
+})->name('products');
 
 // Frame Styles
 Route::get('/shop-by-frame-style', function () {
